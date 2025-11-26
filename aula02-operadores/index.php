@@ -92,7 +92,7 @@
     $feriado = true;
 
     echo ($sol && $sem_chuva || $feriado) ? "Você pode sair pra passear." : "Melhor ficar em casa";
-    
+    echo "<br>";
 
     ?>
 </body>
