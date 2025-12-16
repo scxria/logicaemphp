@@ -3,13 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulário de cadastro</title>
+    <title>Contratos Rothschild</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(https://i.imgur.com/CqFtYUV.png);
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .container{
+            width: 500px;
+            margin: 50px auto;
+            background: linear-gradient(to right, #95fbff, #93ff89);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #414141;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, textarea {
+            width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid rgb(194, 194, 194);
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background: rgb(26, 189, 48);
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: rgb(55, 148, 255);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h2>Cadastro de Contatos</h2>
 
-        <form action="procassa.php" method="POST">
+        <form action="processa.php" method="POST">
             <label>Nome: </label>
             <input type="text" name="nome" required />
 
@@ -20,7 +78,7 @@
             <input type="text" name="telefone" placeholder="(00) 0000-00000" />
 
             <label>Mensagem:</label>
-            <textarea name="Mensagem" rows="4" required></textarea>
+            <textarea name="mensagem" rows="4" required></textarea>
 
             <button type="submit"> Enviar</button>
 
